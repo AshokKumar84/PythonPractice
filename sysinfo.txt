@@ -1,0 +1,68 @@
+
+Host Name:                 DESKTOP-EVO5NOE
+OS Name:                   Microsoft Windows 10 Home
+OS Version:                10.0.19042 N/A Build 19042
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          ashok4uit@gmail.com
+Registered Organization:   N/A
+Product ID:                00325-96727-74313-AAOEM
+Original Install Date:     23/10/2020, 11:01:52
+System Boot Time:          14/03/2021, 09:07:59
+System Manufacturer:       Dell Inc.
+System Model:              Inspiron 7506 2n1
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 140 Stepping 1 GenuineIntel ~2803 Mhz
+BIOS Version:              Dell Inc. 1.1.8, 17/12/2020
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-gb;English (United Kingdom)
+Time Zone:                 (UTC+00:00) Dublin, Edinburgh, Lisbon, London
+Total Physical Memory:     16,107 MB
+Available Physical Memory: 8,684 MB
+Virtual Memory: Max Size:  18,539 MB
+Virtual Memory: Available: 6,259 MB
+Virtual Memory: In Use:    12,280 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              \\DESKTOP-EVO5NOE
+Hotfix(s):                 16 Hotfix(s) Installed.
+                           [01]: KB4601554
+                           [02]: KB4534170
+                           [03]: KB4537759
+                           [04]: KB4542335
+                           [05]: KB4545706
+                           [06]: KB4562830
+                           [07]: KB4570334
+                           [08]: KB4577266
+                           [09]: KB4577586
+                           [10]: KB4580325
+                           [11]: KB4586864
+                           [12]: KB4589212
+                           [13]: KB4593175
+                           [14]: KB4598481
+                           [15]: KB5000802
+                           [16]: KB5000858
+Network Card(s):           2 NIC(s) Installed.
+                           [01]: Intel(R) Wi-Fi 6 AX201 160MHz
+                                 Connection Name: Wi-Fi
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     192.168.1.1
+                                 IP address(es)
+                                 [01]: 192.168.1.118
+                                 [02]: fe80::547f:65c:8d2a:c90f
+                                 [03]: fd00::a43c:1401:ebd8:e664
+                                 [04]: 2a01:4b00:f411:9600:a43c:1401:ebd8:e664
+                                 [05]: fd00::547f:65c:8d2a:c90f
+                                 [06]: 2a01:4b00:f411:9600:547f:65c:8d2a:c90f
+                           [02]: Bluetooth Device (Personal Area Network)
+                                 Connection Name: Bluetooth Network Connection
+                                 Status:          Media disconnected
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
