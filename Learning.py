@@ -98,3 +98,120 @@ print('Hello', end='')
 print('World')
 print('cat','dog','rat')
 print('cat','dog','Mice',sep=',')
+
+# Local Variables Cannot Be Used in the Global Scope
+def spam():
+    eggs = 100
+    print("Local - " + str(eggs))
+
+spam()
+print("Global - " + str(eggs)) #Fails as it is under Global Variable scope
+
+# Local Scopes Cannot Use Variables in Other Local Scopes
+def spam():
+    eggs = 100
+    bacon()
+    print("Spam Local - " + str(eggs))
+
+def bacon():
+    hamm = 20
+    eggs = 0    # eggs = 0 is not printed as it is local to bacon() function
+
+spam()
+
+# Global Variables Can Be Read from a Local Scope
+def spam_1():
+    print("Spam Local - " + str(eggs))
+eggs = 50   #Global variable declared - Can be used in local and global scope
+
+spam_1()
+print("Global - " + str(eggs))
+
+# Local and Global Variables with the Same Name
+def spam():
+    eggs = "Spam Local"
+    print(eggs)
+
+def bacon():
+    eggs = "Bacon Local"
+    print(eggs)     # prints bacon local
+    spam()          # prints spam local
+    print(eggs)     # prints bacon local
+
+eggs = "Global"
+bacon()
+print(eggs)         # prints global
+
+# The global Statement
+def spam():
+    global eggs     # Global variable declared
+    eggs = "spam"
+
+eggs = "Global"
+spam()
+print(eggs)
+
+# To explain Local and Global scope in more detail
+def spam():
+    global eggs
+    eggs = 'spam' # this is the global
+
+def bacon():
+    eggs = 'bacon' # this is a local
+
+def ham():
+    print(eggs) # this is the global
+
+eggs = 42 # this is the global
+spam()
+print(eggs)
+
+
+def spam():
+    print(eggs) # ERROR! - This is a local variable referenced before assignment
+    eggs = 'spam local'
+
+eggs = 'global'
+spam()
+
+# Exception Handling
+def spam(divideBy):
+    try:
+        return 42/divideBy
+    except ZeroDivisionError:
+        print('Error: Invalid argument.')
+
+print(spam(2))
+print(spam(10))
+print(spam(0))
+print(spam(50))
+
+
+# Exception Handling - Stops running the code at the error point because once the execution jumps to except block it never return back
+def spam(divideBy):
+    return 42/divideBy
+
+try:
+    print(spam(2))
+    print(spam(10))
+    print(spam(0))
+    print(spam(50))
+except ZeroDivisionError:
+    print('Error: Invalid argument.')
+
+
+# List Data Types
+spam = ['cat','rat','dog','elephant']
+print(spam)
+
+# Cascading Lists
+spam = [['cat', 'bat'], [10, 20, 30, 40, 50]]
+spam[0]
+spam[1]
+spam[0][1]
+spam[1][4]
+
+# Index using Negative Integers (-1 as last, -2 as second last, etc)
+spam = ['cat', 'bat', 'rat', 'elephant']
+spam[-1]
+spam[-3]
