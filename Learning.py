@@ -78,7 +78,7 @@ for i in range(10):
     print(random.randint(i,10))
 
 # Alternative way to import modules but not advisable way #
-from random import.*
+#from random import.*
 for i in range(10):
     print(random.randint(1,10))
 
@@ -212,6 +212,35 @@ spam[0][1]
 spam[1][4]
 
 # Index using Negative Integers (-1 as last, -2 as second last, etc)
-spam = ['cat', 'bat', 'rat', 'elephant']
+spam = ['cat', 'bat', 'rat', 'elephant','Tiger']
 spam[-1]
 spam[-3]
+spam[-5]
+
+# Index - Single value from the list
+# Slice - Several value from the list
+spam[1:4]
+spam[0:-1]
+spam[1:-2]
+spam[:2]
+spam[1:]
+spam[:]
+len(spam)
+
+# chaning values in list using index
+spam[1] = "dog"
+spam
+spam[-1] = "Whale"
+spam
+spam[2] = spam[1]
+spam
+
+# List concatenation and Replication
+[1,2,3] * 3
+[1,2,3] + ['A','B','C']
+
+# Removing values from the list using del statements
+spam = ['cat', 'bat', 'rat', 'elephant','Tiger']
+del spam[3]     # Delete the element from the list
+spam
+
