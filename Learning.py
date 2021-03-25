@@ -244,3 +244,59 @@ spam = ['cat', 'bat', 'rat', 'elephant','Tiger']
 del spam[3]     # Delete the element from the list
 spam
 
+# FOR loop in list
+for i in range(4):
+    print(i)
+
+# Technically - For loop does
+for i in [0,1,2,3]:
+    print(i)
+
+# Excercise
+supplies = ['pens', 'staplers', 'flame-throwers', 'binders']
+for index in range(len(supplies)):
+    print('Index ' + str(index) + ' Supplies ' + supplies[index])
+
+
+# IN and NOT-IN operator
+'howdy' in ['hello', 'hi', 'howdy', 'heyas']
+'cat' in ['hello', 'hi', 'howdy', 'heyas']
+
+'howdy' not in ['hello', 'hi', 'howdy', 'heyas']
+'cat' not in ['hello', 'hi', 'howdy', 'heyas']
+
+# The Multiple Assignment Trick
+cat = ['fat', 'black', 'loud']
+size = cat[0]
+color = cat[1]
+disposition = cat[2]
+print(size)
+
+cat = ['fat', 'black', 'loud']
+size, color, disposition = cat
+print(color)
+
+# Methods - Same as function except it is called on by Values
+spam = ['hello', 'hi', 'howdy', 'heyas']
+spam.index('hello')     # 'Hello' - is a value
+spam.index('howdy')
+
+spam = ['Zophie', 'Pooka', 'Fat-tail', 'Pooka']
+spam.index('Pooka')     # Retunrs the index of first value
+
+# Adding values to list
+spam.append('mouse')
+spam
+
+# deleting  values from list based on index
+del spam[1]
+spam
+
+# removing values from the list
+spam.remove('mouse')
+spam
+
+# insert method can insert at any position in the list
+spam.insert(1,'chicken')
+spam
+

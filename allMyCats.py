@@ -5,9 +5,12 @@ while True:
 
     if name == '':
         break
-
-catNames = catNames + [name] # list concatenation
+    catNames = catNames + [name] # list concatenation
 print('The cat names are:')
 
 for name in catNames:
     print(' ' + name)
+
+# FOR loop in list
+for i in range(4):
+    print(i)
