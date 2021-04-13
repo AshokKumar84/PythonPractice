@@ -300,3 +300,93 @@ spam
 spam.insert(1,'chicken')
 spam
 
+# Sort the values in the list
+spam.sort()
+spam
+
+spam.sort(reverse=True)
+spam
+
+# Sort the value in regular alphabetical order
+spam = ['a', 'z', 'A', 'Z']
+spam.sort(key=str.lower)
+spam    
+
+# Strings
+name = 'Zophie'
+name[0]     # To display string values
+name[-2]
+name[0:4]
+for i in name:
+    print ('***' +i+ '***')
+
+# List is mutable whereas Strings are Immutable
+name = 'Zophie a cat'
+name[7] = 'the'     # This is Immutable
+name
+
+name = 'Zophie a cat'
+newName = name[0:7] + 'the ' + name[9:12]
+newName
+
+# Tuple data type
+# Tuple is almost identical to list data type except tuples are typed with in parentheses instead of square brackets.
+eggs = ('hello',4,0.2)
+eggs[0]
+eggs[1:3]
+len(eggs)
+
+# Tuples are like Strings. They are Immutable.
+eggs[1] = 10    # Throws an error as they are immutable
+
+# Tuple is faster than list
+type(('hello',))       # Tuple
+type(('hello'))        # Str
+
+# Converting data types - List to Tuple and Tuple to List
+tuple(['hello', 10, 0.5 ])      # Converts List to Tuple  
+list(('hello',10,0.5))          # Converts Tuple to List
+list('hello')                   # Converting Tuple to list to make it Mutable
+
+
+# Chaning the List reference value will also change the value of List
+spam = [1,2,3,4,5]
+spam
+cheese = spam
+cheese
+cheese[1] = 'hello'     # Changing the value of list reference 
+spam
+spam[0] = 'world'       # Changing the list also change the reference value
+spam
+cheese
+
+# Passing references
+def eggs(someParameter):
+    someParameter.append('Hello')
+
+spam = [1,2,3,4,5]
+eggs(spam)
+print(spam)
+
+# copy() and deepcopy() function
+import copy
+spam = [1,2,3,4,5]
+cheese = copy.copy(spam)    # Creates a seperate copy not the reference
+cheese[1] = 'Hello'
+spam
+cheese
+
+# Excercise
+spam = ['a','b','c','d']
+spam[-1]
+spam[:2]
+spam[int(int('3' * 2) / 11)]
+
+bacon = [3.14, 'cat', 11, 'cat', True]
+bacon.index('cat')
+bacon.append(99)
+bacon.remove('cat')
+bacon
+
+# Dictonaries
+
