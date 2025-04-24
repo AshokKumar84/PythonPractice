@@ -79,3 +79,27 @@ df_excel['gender'].str.title()
 
 df_excel['gender'] = df_excel['gender'].str.title()
 df_excel['gender'].str.title()
+
+df_excel['race/ethnicity'].str.extract(r'([A-Z])')
+df_excel[df_excel['gender'].isnull()]
+
+excel_1 = 'E:\Work\GitHub\PythonPractice\Data Science\StudentsPerformance.csv'
+excel_2 = 'E:\Work\GitHub\PythonPractice\Data Science\LanguageScore.csv'
+
+df_excel_1 = pd.read_csv(excel_1)
+df_excel_2 = pd.read_csv(excel_2)
+
+df_excel_1.head()
+df_excel_2 = df_excel_2.reset_index()
+df_excel_2 = df_excel_2.reset_index(drop=True)  # Drop index
+df_excel_2
+df_excel_2.loc[80,] # Displays record based on index value
+
+df_excel_1 = df_excel_1.reset_index()   # Create an index column
+df_excel_1.head()
+df_excel_1 = df_excel_1.rename(columns={'index':'id'})  # rename index column by id
+df_excel_1.head()
+
+df_excel_1.loc[100,]
+
+df_excel_1.loc[df_excel_1['id']==100,'math score']
